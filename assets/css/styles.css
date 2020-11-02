@@ -1,0 +1,257 @@
+body {
+  font-family: 'Spartan', sans-serif;
+  margin: 0 auto;
+  width: 1440px;
+}
+p {
+  color: hsl(0, 0%, 63%);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Menu */
+.menu-list {
+  color: white;
+  font-weight: 500;
+  margin: 20px 0 0 20px;
+  position: absolute;
+}
+.menu-item {
+  display: inline;
+  font-size: 12px;
+  font-weight: 600;
+  list-style-type: none;
+  margin-left: 12px;
+  margin-right: 12px;
+  text-transform: lowercase;
+}
+
+.menu-link:hover {
+  content: "";
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+#menu-logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+#menu {
+margin-left: 112px;
+}
+.menu-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+.hide{
+  display: none;
+}
+/* Top Sections */
+.top {
+  display: block;
+  height: 534px;
+  width: 1440px;
+}
+.div-fc {
+  display: flex;
+}
+.img-top-left {
+  order: 1;
+}
+.div-top-right {
+  margin: 0;
+  padding: 0;
+  width: 600px;
+}
+.div-text-right {
+  order: 2;
+  padding: 100px 100px;
+  width: auto;
+}
+.div-text-right p {
+  margin: 20px 0;
+}
+.shop-now {
+  display: inline;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+
+/* Nav buttons */
+.nav-buttons {
+  background-color: black;
+  top: -94.28px;
+  display: flex;
+  left: 840px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 160px;
+}
+#nav-left, #nav-right {
+  background-color: black;
+  border-width: 0;
+  color: white;
+  padding: 30px;
+  width: 80px;
+}
+#nav-left:hover, #nav-right:hover {
+  background-color: #444444;
+}
+/* Bottom Sections */
+.img-btm-left {
+  order: 1;
+}
+.div-bottom-center {
+  float: center;
+  padding: 75px 50px;
+  order: 2;
+  width: 580px;
+}
+.img-btm-right {
+  order: 3;
+}
+/* Miscellaneous modifiers */
+.display-off {
+  height: 0;
+  opacity: 0;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+.display-on {
+  height: 534px;
+  opacity: 1;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+.z0 {
+  z-index: 0;
+}
+.z1 {
+  z-index: 1;
+}
+
+/* Mobile settings */
+@media (max-width: 720px) {
+  body {
+    width: 375px;
+  }
+  /* Menu */
+  .menu-list {
+    height: 100px;
+    margin: 0;
+    width: 375px;
+  }
+  .menu-item {
+    color: black;
+    margin: 0 12.5px;
+  }
+  #menu {
+    background-color: white;
+    height: 12px;
+    margin: 0;
+    padding: 51.5px 0 51.5px 96px;
+    position: relative;
+    width: 375px;
+  }
+  #menu-close {
+    color: gray;
+    left: 55px;
+    position: absolute;
+    top: 53px
+  }
+  #menu-burger {
+    left: 25px;
+    position: absolute;
+    top: 50px;
+  }
+  #menu-logo {
+    left: 156.5px;
+    margin-right: 0;
+    position: absolute;
+    top: 50px;
+  }
+  #background-fade {
+    background: rgb(59,56,93);
+    background: linear-gradient(180deg, rgba(59,56,93,0.5) 0%, rgba(9,9,70,0.25121951219512195) 65%, rgba(0,212,255,0) 100%);
+    height: 700px;
+    left: 0;
+    position: absolute;
+    top: 115px;
+    width: 375px;
+  }
+
+  /* Top Sections */
+  .top {
+    display: block;
+    height: auto;
+    width: 375px;
+    position: relative;
+
+  }
+  .div-fc {
+    display: block;
+  }
+  .img-top-left {
+    display: block
+  }
+  .div-top-right {
+    margin: 0;
+    padding: 0;
+    width: 375px;
+  }
+  .div-text-right {
+    padding: 50px 50px;
+    width: auto;
+  }
+  .div-text-right p {
+    margin: 20px 0;
+  }
+
+  /* Nav buttons */
+  .nav-buttons {
+    top: 306px;
+    left: 295px;
+    position: absolute;
+    width: 80px;
+  }
+  #nav-left, #nav-right {
+    padding: 10px;
+    width: 40px;
+  }
+  /* Bottom Sections */
+  .img-btm-left {
+    display: block;
+    width: 375px;
+  }
+  .div-bottom-center {
+    display: block;
+    padding: 50px 50px;
+    width: 275px;
+  }
+  .img-btm-right {
+    display: block;
+    width: 375px;
+  }
+  /* Miscellaneous modifiers */
+  .display-off {
+    height: 0;
+  }
+  .display-on {
+    height: auto;
+  }
+
+  /* Attribution */
+  .attribution {
+    font-size: 12px;
+  }
+}
